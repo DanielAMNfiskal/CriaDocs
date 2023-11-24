@@ -92,10 +92,17 @@ class Cria_Documento:
 
         dadosDOC.sistemas = str.upper(dadosDOC.sistemas)
 
-        match dadosDOC.biblioteca:
-            case "1": dadosDOC.biblioteca = "AutoIT"
-            case "2": dadosDOC.biblioteca = "Selenium"
-            case "3": dadosDOC.biblioteca = "AutoIT e Selenium"
+        if dadosDOC.biblioteca == "1":
+            dadosDOC.biblioteca = "AutoIT"
+            pass
+        elif dadosDOC.biblioteca == "2":
+            dadosDOC.biblioteca = "Selenium"
+            pass
+        elif dadosDOC.biblioteca == "3":
+            dadosDOC.biblioteca = "AutoIT e Selenium"
+            pass
+        else:
+            pass
 
         dadosInput = {
         "empresa": str.upper(dadosDOC.empresa),
