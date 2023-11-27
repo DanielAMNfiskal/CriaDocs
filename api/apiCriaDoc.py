@@ -27,7 +27,7 @@ class Cria_Documento:
         PDD_Abre_Site = BytesIO()
         SDD_Abre_Site = BytesIO()
 
-        modelos_path = r"C:\Users\daniel.novaes\CriaDoc\modelosDocs"
+        modelos_path = r"modelosDocs"
 
         PDD_Abre_Site_template = docx.Document(f"{modelos_path}/PDD_MODELO_AbreSite_Fiskal_Digital.docx")
         SDD_Abre_Site_template = docx.Document(f"{modelos_path}/SDD_MODELO_AbreSite_Fiskal_Digital.docx")
@@ -82,7 +82,7 @@ class Cria_Documento:
         PDD_Login = BytesIO()
         SDD_Login = BytesIO()
 
-        modelos_path = r"C:\Users\daniel.novaes\CriaDoc\modelosDocs"
+        modelos_path = r"modelosDocs"
 
         PDD_Login_template = docx.Document(f"{modelos_path}/PDD_MODELO_Fiskal_Digital.docx")
         SDD_Login_template = docx.Document(f"{modelos_path}/SDD_MODELO_Fiskal_Digital.docx")
